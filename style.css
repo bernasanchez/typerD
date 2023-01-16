@@ -1,0 +1,123 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap);
+
+:root {
+  --blck: #16162b;
+  --bg: #211b31;
+  --bg2: #1e2432;
+  --bg3: #2c2541;
+  --fg: #e3e2e1;
+  --fg2: #9699af;
+  --btn: #ff062e;
+  --open: #73e873;
+  --closed: #ef8228;
+}
+
+* {
+  /* border: 1px dashed red; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  color: var(--fg);
+}
+
+body {
+  min-height: 100vh;
+  background: url(./d9NQsM.webp) no-repeat center/cover ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px calc(5px + 8vw);
+  border-radius: 10px;
+  background-color: #211b31dd;
+  backdrop-filter: blur(6px);
+}
+
+.main h1 {
+  color: var(--open);
+}
+
+.main h2 {
+  font-size: calc(1rem + 3vw);
+}
+
+.main p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#text {
+  width: 60%;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  color: var(--blck);
+  outline: none;
+  padding: 10px;
+  background-color: #bfb2e483;
+  border-radius: 5px;
+}
+
+#text::placeholder {
+  text-align: center;
+  color: #1e2432;
+}
+
+.time-container span {
+  padding-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.end-game-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 30px calc(5px + 8vw);
+  border-radius: 10px;
+  background-color: #211b31dd;
+  backdrop-filter: blur(6px);
+}
+
+button {
+  font-weight: 700;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--btn);
+  border-radius: 5px;
+}
+
+.end-game-container p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.back-button {
+  top: 15px;
+  left: 15px;
+  position: absolute;
+  color: var(--fg);
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.back-btn {
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--btn);
+}
